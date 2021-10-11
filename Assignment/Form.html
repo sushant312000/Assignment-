@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+ <div>
+ 	<div>
+ 	<h1 id="time">Time</h1>
+ 	</div>
+     <form>
+		Name<br>
+		<input type="text" name="name" required=""><br>
+		Email<br>
+		<input type="email" name="email" required=""><br>
+		DOB<br>
+		<input type="date" name="dob" required=""><br>
+		About Me<br>
+		<textarea name="w3review" rows="4" cols="50"></textarea><br>
+		<input type="button" name="" value="Submit">
+	</form>
+	 	<script type="text/javascript">
+			var counter = 180;
+        	setInterval( function(){
+            counter--;
+            if (counter>=0) {
+                id = document.getElementById('time');
+                id.innerHTML = counter;
+            }
+        	},1000);
+		</script>
+</body>
+</html>
